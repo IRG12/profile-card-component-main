@@ -79,6 +79,16 @@ body::before {
   font-size: 14px;
 }
 
+.middle2 {
+  display:flex;
+  justify-content: space-around;
+}
+
+.middle2 p {
+  margin-top: 37.5px;
+  padding:15px;
+}
+
 .circle {
   height: 80px;
   width: 80px;
@@ -90,6 +100,8 @@ body::before {
   border-radius: 50px;
   z-index: 1;
 }
+
+
 
 .footer {
   height: 75px;
