@@ -33,14 +33,14 @@ let cat = {
 }
 
 
-// console.log(document.getElementById("full-name").style.color = "blue");
+
 
 // document.getElementById("#full-name").addEventListener("click", function() {
 //     document.getElementById("#full-name").style.color = "blue"
 // })
 //--------------------------------------------------------------------------------------
 
-
+document.getElementById("change2").addEventListener("click", function changeDog() {
 // Get access to your name --------------------------------------------------------------------------------------------------
 document.querySelector("#full-name").innerText = dog.name;
 // console.log(document.querySelector("#full-name").innerText)
@@ -71,6 +71,12 @@ let standings2 = document.querySelector("#currentStats2").innerText = dog.stats.
 let standings3 = document.querySelector("#currentStats3").innerText = dog.stats.posts 
 // console.log(standings3)
 
+})
+
+// console.log(document.getElementById("full-name").style.color = "blue");
+
+
+
 
 // //----------------------------------------------------------------------
 //I need help assigning with a "for in" loop
@@ -81,24 +87,55 @@ let standings3 = document.querySelector("#currentStats3").innerText = dog.stats.
 //         const element = dog[key];
 //         if (element === dog.stats) {
 //             console.log(element)
-//              for (const key in element) {
-//                  if (Object.hasOwnProperty.call(element, key)) {
-//                      const dogStats = element[key];
-//                      if (dogStats == "1.2M") {
-//                          console.log(dogStats)
-//                         standings1 = dogStats
-//                      }
+             
                      
 //                  }
 //              }
 //         }
-//     }
-// }
+    
 
 
 
-// // x = document.getElementsByTagName("*");
-// // l = x.length;
-// // for (i = 0; i < l; i++) {
-// //   document.write(x[i].tagName + "<br>");
-// // }
+
+
+
+document.getElementById("change1").addEventListener("click", function changeCat() {
+
+
+     
+
+        //     // Get access to your name --------------------------------------------------------------------------------------------------
+        document.querySelector("#full-name").innerText = cat.name;
+        // console.log(document.querySelector("#full-name").innerText)
+        
+        // //Get access to your age ---------------------------------------------------------------------------------------------
+        let age = document.querySelector("#text1").innerText = cat.age;
+        // console.log(age)
+        // //Get access to your location ----------------------------------------------------------------------------------
+        let cornfield = document.getElementById("location").innerText = cat.location;
+        // console.log(cornfield)
+        // //Get access to your profileImg * ----------------------------------------------------------------------------
+        let cardImg = document.querySelector(".circle").style.backgroundImage = cat.profileImg
+        // console.log(cardImg)
+        
+        // // //Get access to your bannerImg * -----------------------------------------------------------------------
+        let topImg = document.querySelector(".top").style.backgroundImage = cat.bannerImg
+        // console.log(topImg)
+        // // //Get access to your backgroundColor *----------------------------------------------------------------
+        let background = document.querySelector("body").style.backgroundColor = cat.backgroundColor
+        // console.log(background)
+        
+        
+        // // // //Get access to your stats * -----------------------------------------------------------
+        let standings1 = document.querySelector("#currentStats1").innerText = cat.stats.followers
+        // console.log(standings1)
+        let standings2 = document.querySelector("#currentStats2").innerText = cat.stats.likes
+        // console.log(standings2)
+        let standings3 = document.querySelector("#currentStats3").innerText = cat.stats.posts 
+        // console.log(standings3)
+        
+        })
+
+
+
+

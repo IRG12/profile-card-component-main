@@ -80,13 +80,13 @@ body {
 }
 
 .middle2 {
-  display:flex;
+  display: flex;
   justify-content: space-around;
 }
 
 .middle2 p {
   margin-top: 37.5px;
-  padding:15px;
+  padding: 15px;
 }
 
 .circle {
@@ -100,8 +100,6 @@ body {
   border-radius: 50px;
   z-index: 1;
 }
-
-
 
 .footer {
   height: 75px;
@@ -124,4 +122,20 @@ body {
 
 #text2 {
   margin-left: 8px;
+}
+
+.btn {
+  height: 50px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+button {
+  height: 25px;
+  width: 100px;
+  background: crimson;
+  
 }
