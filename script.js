@@ -34,10 +34,25 @@ let cat = {
 
 
 
+//How would you write some logic to when the default color is present, change it to another color and then back to it's default
+document.getElementById("full-name").addEventListener("click", function() {
+     
+   let colorChange2 = document.getElementById("full-name");
+    if (colorChange2.style.color == "blue") {
 
-// document.getElementById("#full-name").addEventListener("click", function() {
-//     document.getElementById("#full-name").style.color = "blue"
-// })
+        colorChange2.style.color = "black"        
+
+    } else if (colorChange2.style.color != "blue") {
+
+        colorChange2.style.color = "blue"
+
+    }
+
+    
+
+    
+    
+})
 //--------------------------------------------------------------------------------------
 
 document.getElementById("change2").addEventListener("click", function changeDog() {

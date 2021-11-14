@@ -18,7 +18,7 @@ body {
   flex-direction: column;
 }
 
-/* body::before {
+body::before {
   content: "";
   background-image: url("kansas-city-loose-park-fall-19-j.jpg");
   background-repeat: no-repeat;
@@ -29,7 +29,7 @@ body {
   bottom: 0px;
   left: 0px;
   opacity: 0.75;
-} */
+}
 
 .container {
   height: 325px;
@@ -133,9 +133,16 @@ body {
 }
 
 
-button {
+#change1 {
   height: 25px;
   width: 100px;
-  background: crimson;
+  background-color: #FFD580; 
+  
+}
+
+#change2 {
+  height: 25px;
+  width: 100px;
+  background-color: #00FFFF; 
   
 }
