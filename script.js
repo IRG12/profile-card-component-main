@@ -78,13 +78,46 @@ let background = document.querySelector("body").style.backgroundColor = dog.back
 // console.log(background)
 
 
-// // //Get access to your stats * -----------------------------------------------------------
-// let standings1 = document.querySelector("#currentStats1").innerText = dog.stats.followers
-// // console.log(standings1)
+// // // //Get access to your stats * -----------------------------------------------------------
+    
+let standings1 = document.querySelector("#currentStats1").innerText = dog.stats.followers
+// console.log(standings1)
 let standings2 = document.querySelector("#currentStats2").innerText = dog.stats.likes
 // console.log(standings2)
-let standings3 = document.querySelector("#currentStats3").innerText = dog.stats.posts 
+let standings3 = document.querySelector("#currentStats3").innerText = dog.stats.posts
 // console.log(standings3)
+
+        // standings1 = dog.stats.followers
+        // standings2 = dog.stats.likes
+        // standings3 = dog.stats.posts 
+    
+    
+// for (const key in dog) {
+//     if (Object.hasOwnProperty.call(dog, key)) {
+//         const element = dog[key];
+//         if (element === dog.stats) {
+//             console.log(element)
+//              console.log("YES!")
+//                      for (const key in element) {
+//                          if (Object.hasOwnProperty.call(element, key)) {
+//                              const element2 = element[key];
+//                              if (element2 === "1.2M") {
+//                                  console.log("Yeah Buddy")
+//                                  standings1 = element2
+//                              } else if (element2 === "8M") {
+//                                  console.log("Nice!")
+//                                  standings2 = element2
+//                              } else if (element2 === "2K") {
+//                                  console.log("Your on Fire!")
+//                                  standings3 = element2
+//                             }
+//                          }
+//                      }
+//                  }
+//              }
+//         }
+    
+      
 
 })
 
@@ -97,16 +130,27 @@ let standings3 = document.querySelector("#currentStats3").innerText = dog.stats.
 //I need help assigning with a "for in" loop
 
 
-// for (const key in dog) {
-//     if (Object.hasOwnProperty.call(dog, key)) {
-//         const element = dog[key];
-//         if (element === dog.stats) {
-//             console.log(element)
-             
-                     
-//                  }
-//              }
-//         }
+for (const key in dog) {
+    if (Object.hasOwnProperty.call(dog, key)) {
+        const element = dog[key];
+        if (element === dog.stats) {
+            console.log(element)
+             console.log("YES!")
+                     for (const key in element) {
+                         if (Object.hasOwnProperty.call(element, key)) {
+                             const element2 = element[key];
+                             if (element2 === "1.2M") {
+                                 console.log("Yeah Buddy")
+                             } else if (element2 === "8M") {
+                                 console.log("Nice!")
+                             } else if (element2 === "2K") {
+                                console.log("Your on Fire!")
+                            }
+                         }
+                     }
+                 }
+             }
+        }
     
 
 

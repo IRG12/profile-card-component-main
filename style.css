@@ -16,6 +16,7 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  background-color: #004d00;
 }
 
 /* body::before {
@@ -132,17 +133,14 @@ body {
   align-items: center;
 }
 
-
 #change1 {
   height: 25px;
   width: 100px;
-  background-color: #FFD580; 
-  
+  background-color: #ffd580;
 }
 
 #change2 {
   height: 25px;
   width: 100px;
-  background-color: #00FFFF; 
-  
+  background-color: #00ffff;
 }
