@@ -57,13 +57,15 @@ document.getElementById("full-name").addEventListener("click", function() {
 
 
 let standings1 = document.querySelector("#currentStats1")
-console.log(standings1)
+// console.log(standings1)
 let standings2 = document.querySelector("#currentStats2")
 // console.log(standings2)
 let standings3 = document.querySelector("#currentStats3")
 // console.log(standings3)
 
-document.getElementById("change2").addEventListener("click", function changeDog() {
+
+
+function changeDog() {
 // Get access to your name --------------------------------------------------------------------------------------------------
 document.querySelector("#full-name").innerText = dog.name;
 // console.log(document.querySelector("#full-name").innerText)
@@ -88,12 +90,6 @@ let background = document.querySelector("body").style.backgroundColor = dog.back
 
 // // // //Get access to your stats * -----------------------------------------------------------
     
-
-
-        // standings1 = dog.stats.followers
-        // standings2 = dog.stats.likes
-        // standings3 = dog.stats.posts 
-    
     
 for (const key in dog) {
     if (Object.hasOwnProperty.call(dog, key)) {
@@ -105,10 +101,10 @@ for (const key in dog) {
                          if (Object.hasOwnProperty.call(element, key)) {
                              const element2 = element[key];
                              if (element2 === "1.2M") {
-                                 console.log(standings1)
+                                //  console.log(standings1)
                                 //  console.log("Yeah Buddy")
                                  standings1.innerText = element2
-                                 console.log(standings1)
+                                //  console.log(standings1)
                              } else if (element2 === "8M") {
                                 //  console.log("Nice!")
                                  standings2.innerText = element2
@@ -124,49 +120,18 @@ for (const key in dog) {
     
       
 
-})
+}
 
-// console.log(document.getElementById("full-name").style.color = "blue");
+// //---------------------------------------------------------------------
 
+let standings4 = document.querySelector("#currentStats1")
+        // console.log(standings1)
+        let standings5 = document.querySelector("#currentStats2")
+        // console.log(standings2)
+        let standings6 = document.querySelector("#currentStats3") 
+        // console.log(standings3)
 
-
-
-// //----------------------------------------------------------------------
-//I need help assigning with a "for in" loop
-
-
-// for (const key in dog) {
-//     if (Object.hasOwnProperty.call(dog, key)) {
-//         const element = dog[key];
-//         if (element === dog.stats) {
-//             console.log(element)
-//              console.log("YES!")
-//                      for (const key in element) {
-//                          if (Object.hasOwnProperty.call(element, key)) {
-//                              const element2 = element[key];
-//                              if (element2 === "1.2M") {
-//                                  console.log("Yeah Buddy")
-//                              } else if (element2 === "8M") {
-//                                  console.log("Nice!")
-//                              } else if (element2 === "2K") {
-//                                 console.log("Your on Fire!")
-//                             }
-//                          }
-//                      }
-//                  }
-//              }
-//         }
-    
-
-
-
-
-
-
-document.getElementById("change1").addEventListener("click", function changeCat() {
-
-
-     
+function changeCat() {
 
         //     // Get access to your name --------------------------------------------------------------------------------------------------
         document.querySelector("#full-name").innerText = cat.name;
@@ -191,15 +156,58 @@ document.getElementById("change1").addEventListener("click", function changeCat(
         
         
         // // // //Get access to your stats * -----------------------------------------------------------
-        let standings1 = document.querySelector("#currentStats1").innerText = cat.stats.followers
-        // console.log(standings1)
-        let standings2 = document.querySelector("#currentStats2").innerText = cat.stats.likes
-        // console.log(standings2)
-        let standings3 = document.querySelector("#currentStats3").innerText = cat.stats.posts 
-        // console.log(standings3)
+    
+        for (const key in dog) {
+    if (Object.hasOwnProperty.call(dog, key)) {
+        const element = cat[key];
+        if (element === cat.stats) {
+            // console.log(element)
+            //  console.log("YES!")
+                     for (const key in element) {
+                         if (Object.hasOwnProperty.call(element, key)) {
+                             const element2 = element[key];
+                             if (element2 === "1.2M") {
+                                //  console.log(standings1)
+                                //  console.log("Yeah Buddy")
+                                 standings4.innerText = element2
+                                //  console.log(standings1)
+                             } else if (element2 === "8M") {
+                                //  console.log("Nice!")
+                                 standings5.innerText = element2
+                             } else if (element2 === "2K") {
+                                //  console.log("Your on Fire!")
+                                 standings6.innerText = element2
+                            }
+                         }
+                     }
+                 }
+             }
+        } 
+    
         
-        })
+        
+}
+        
+
+
+document.getElementById("change").addEventListener("click", function () {
+
+    
+    
+    if (document.getElementById("full-name").innerText == "Isaiah Gutierrez") {
+
+        changeDog()
+    } else if (document.getElementById("full-name").innerText == dog.name) {
+
+        changeCat()
+
+    } else if (document.getElementById("full-name").innerText == cat.name) {
+        changeDog()
+    }
+    
+
+}) 
 
 
 
-
+//---------------------------------------------------------------------------------------------
